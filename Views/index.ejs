@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Home Page</title>
+	</head>
+
+	<body>
+		<h1> Statbuilder </h1>
+		<form method="get">
+			<% if(!user) { %>
+			<input type="submit" formaction="/auth/login" value="login">
+			<% } else {%>
+			<input type="submit" formaction="/auth/logout" value="logout">
+			<input type="submit" formaction="/profile" value="profile">
+			<% } %>
+		</form>
+	</body>
+</html>
+
